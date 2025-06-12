@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Triodion&display=swap');
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: none;
+}
+   
+body { 
+    font-family: 'Montserrat';  
+} 
+input{
+border: none;
+outline: none;
+border-bottom: 1px solid rgb(0, 0, 0); /* Можно настроить цвет и толщину рамки */
+}
+header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav { 
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+} 
+.nav-list { 
+    list-style: none; /* Убираем маркеры списка */ 
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Montserrat';
+    
+
+} 
+.nav-list li { 
+    margin-right: 20px; /* Отступ между пунктами */ 
+    display: inline-block; 
+    cursor: pointer; 
+    position: relative; 
+} 
+.nav-list li a { 
+    color: rgb(110, 110, 110); 
+    opacity: 100%;
+    font-weight: 700;
+    text-decoration: none; 
+    position: relative; /* Для позиционирования псевдоэлемента */ 
+} 
+.nav-list a::after { 
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    left: 0; 
+    bottom: -1px; /* Расположение подчеркивания */ 
+    width: 100%; 
+    height: 2px; /* Толщина подчеркивания */ 
+    background: rgb(110, 110, 110); /* Цвет подчеркивания */ 
+    transform: scaleX(0); /* Начальное состояние (не видно) */ 
+    transition: transform 0.3s ease; /* Плавный переход */ 
+} 
+.zag{
+    padding-top:5%;
+    Text-align: center;
+    font-size:45px;
+
+
+}
+.text7{
+    padding-left: 1900px;
+  }
+.foto img {
+    padding-top:5%;
+    max-width:600px;
+    max-height:600px;
+   
+  }
+  .foto{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  }
+  a{
+      color: black;
+      font-weight:700;
+      text-decoration: none;
+
+  }
+  #text8{
+    position: absolute; 
+    color: rgb(0, 0, 0); 
+    margin-top: 520px;
+  }
+
+  .a p {
+      display: block;
+      text-align: left;
+  }
+
+  .a .p {
+      font-weight: 300;
+
+  }
+  .text9 {
+        margin-top: 900px;
+      }
+      footer {
+        padding: 10px 40px;
+        background: rgb(0, 0, 0);
+        color: white;
+        height: 25vh;
+        margin-top: 400px;
+      }
+      .link0{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 auto;
+          width: 20vw;
+      }
+      .link a{
+        color:#ffffff;
+      }
+      .link2 a{
+         
+        color:#ffffff;
+
+      }
+    
+    
+    

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Triodion&display=swap');
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: none;
+}
+   
+body { 
+    font-family: 'Montserrat';  
+} 
+
+header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav { 
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+} 
+.nav-list { 
+    list-style: none; /* Убираем маркеры списка */ 
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Montserrat';
+    
+
+} 
+.nav-list li { 
+    margin-right: 20px; /* Отступ между пунктами */ 
+    display: inline-block; 
+    cursor: pointer; 
+    position: relative; 
+} 
+.nav-list li a { 
+    color: rgb(110, 110, 110); 
+    opacity: 100%;
+    font-weight: 700;
+    text-decoration: none; 
+    position: relative; /* Для позиционирования псевдоэлемента */ 
+} 
+.nav-list a::after { 
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    left: 0; 
+    bottom: -1px; /* Расположение подчеркивания */ 
+    width: 100%; 
+    height: 2px; /* Толщина подчеркивания */ 
+    background: rgb(110, 110, 110); /* Цвет подчеркивания */ 
+    transform: scaleX(0); /* Начальное состояние (не видно) */ 
+    transition: transform 0.3s ease; /* Плавный переход */ 
+} 
+.text7{
+    display: block;
+  }
+/* Располагает по порядку элементы */
+input:not(.btn) {
+    flex-direction: column;
+    display: flex;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0); /* Можно настроить цвет и толщину рамки */
+    background: transparent;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#divider {
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+select {
+    float: right;
+}
+
+label {
+    margin-top: 50px;
+}
+
+.transparent {
+    display:flex; /* Изменено на flex для правильного отображения */
+    width: 300px;
+    padding-top: 50px;
+    padding: 50px 50px;
+    margin: 50px auto 0;
+    background-size: cover;
+    border-radius: 15px; /* Добавлено для скругления углов */
+    overflow: hidden; /* Добавлено для обрезки содержимого */
+    background-color: rgb(199, 195, 195);
+}
+.transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; right: 0;
+    bottom: 0;
+}
+.form-inner {
+    padding-top: 50%;
+    display:absolute ;
+    justify-content: center;
+    z-index: 1; /* Убедитесь, что элементы внутри form-inner находятся выше фона */
+}   
+.form-inner input[type="submit"] {
+    background:#000000;
+    color: rgb(110, 110, 110);
+    /* Цвет кнопки после наведения курсора */
+}
+.form-inner input[type="submit"]:hover {
+    background: #706666; 
+}
+
